@@ -39,13 +39,11 @@ extension ChatRealViewController : UITableViewDataSource {
         return cell
         
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
-    
     
 }
 
 extension ChatRealViewController : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        80
+    }
 }
