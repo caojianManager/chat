@@ -17,6 +17,8 @@
 		2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */; };
 		2DC05B6D25F4AB7200C07125 /* ChatRealViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */; };
 		2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */; };
+		2DC7E1FD25FB4A3C004E33EA /* ChatAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7E1FB25FB4A3C004E33EA /* ChatAddressTableViewCell.swift */; };
+		2DC7E1FE25FB4A3C004E33EA /* ChatAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC7E1FC25FB4A3C004E33EA /* ChatAddressTableViewCell.xib */; };
 		2DEB1C5A25F253CA007EB770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB1C5925F253CA007EB770 /* AppDelegate.swift */; };
 		2DEB1C7125F25512007EB770 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DEB1C7025F25512007EB770 /* Launch Screen.xib */; };
 		2DF0397625F513EF00EC0088 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0397525F513EF00EC0088 /* images.xcassets */; };
@@ -33,6 +35,8 @@
 		2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatPersonalViewController.xib; sourceTree = "<group>"; };
 		2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRealViewTableViewCell.swift; sourceTree = "<group>"; };
 		2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRealViewTableViewCell.xib; sourceTree = "<group>"; };
+		2DC7E1FB25FB4A3C004E33EA /* ChatAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAddressTableViewCell.swift; sourceTree = "<group>"; };
+		2DC7E1FC25FB4A3C004E33EA /* ChatAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAddressTableViewCell.xib; sourceTree = "<group>"; };
 		2DEB1C5625F253CA007EB770 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEB1C5925F253CA007EB770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEB1C6725F253CA007EB770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		2D58611325F3B0B50071C20B /* AddressList */ = {
 			isa = PBXGroup;
 			children = (
+				2DC7E1FA25FB49A2004E33EA /* view */,
 				2D58611B25F3B1440071C20B /* ChatAddressViewController.swift */,
 				2D58611C25F3B1440071C20B /* ChatAddressViewController.xib */,
 			);
@@ -91,6 +96,15 @@
 			children = (
 				2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */,
 				2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2DC7E1FA25FB49A2004E33EA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7E1FB25FB4A3C004E33EA /* ChatAddressTableViewCell.swift */,
+				2DC7E1FC25FB4A3C004E33EA /* ChatAddressTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -207,6 +221,7 @@
 				2D58611E25F3B1440071C20B /* ChatAddressViewController.xib in Resources */,
 				2D58611825F3B1320071C20B /* ChatRealViewController.xib in Resources */,
 				2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */,
+				2DC7E1FE25FB4A3C004E33EA /* ChatAddressTableViewCell.xib in Resources */,
 				2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEB1C5A25F253CA007EB770 /* AppDelegate.swift in Sources */,
+				2DC7E1FD25FB4A3C004E33EA /* ChatAddressTableViewCell.swift in Sources */,
 				2D58610F25F3AFEC0071C20B /* ChatHomeViewController.swift in Sources */,
 				2D58612225F3B1530071C20B /* ChatPersonalViewController.swift in Sources */,
 				2D58611725F3B1320071C20B /* ChatRealViewController.swift in Sources */,
