@@ -15,9 +15,11 @@
 		2D58611E25F3B1440071C20B /* ChatAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D58611C25F3B1440071C20B /* ChatAddressViewController.xib */; };
 		2D58612225F3B1530071C20B /* ChatPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D58612025F3B1530071C20B /* ChatPersonalViewController.swift */; };
 		2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */; };
-		2D7E4EA125F2716100773AC9 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E4EA025F2716100773AC9 /* images.xcassets */; };
+		2DC05B6D25F4AB7200C07125 /* ChatRealViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */; };
+		2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */; };
 		2DEB1C5A25F253CA007EB770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB1C5925F253CA007EB770 /* AppDelegate.swift */; };
 		2DEB1C7125F25512007EB770 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DEB1C7025F25512007EB770 /* Launch Screen.xib */; };
+		2DF0397625F513EF00EC0088 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0397525F513EF00EC0088 /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +31,13 @@
 		2D58611C25F3B1440071C20B /* ChatAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAddressViewController.xib; sourceTree = "<group>"; };
 		2D58612025F3B1530071C20B /* ChatPersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersonalViewController.swift; sourceTree = "<group>"; };
 		2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatPersonalViewController.xib; sourceTree = "<group>"; };
-		2D7E4EA025F2716100773AC9 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = ../../images.xcassets; sourceTree = "<group>"; };
+		2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRealViewTableViewCell.swift; sourceTree = "<group>"; };
+		2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRealViewTableViewCell.xib; sourceTree = "<group>"; };
 		2DEB1C5625F253CA007EB770 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEB1C5925F253CA007EB770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DEB1C6725F253CA007EB770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DEB1C7025F25512007EB770 /* Launch Screen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		2DF0397525F513EF00EC0088 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		2D58611425F3B10F0071C20B /* RealChat */ = {
 			isa = PBXGroup;
 			children = (
+				2DC05B6A25F4A3C600C07125 /* view */,
 				2D58611525F3B1320071C20B /* ChatRealViewController.swift */,
 				2D58611625F3B1320071C20B /* ChatRealViewController.xib */,
 			);
@@ -79,6 +84,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2DC05B6A25F4A3C600C07125 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */,
+				2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		2DEB1C4D25F253CA007EB770 = {
@@ -101,9 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				2DEB1C6E25F25420007EB770 /* Classes */,
-				2DEB1C5925F253CA007EB770 /* AppDelegate.swift */,
-				2DEB1C7025F25512007EB770 /* Launch Screen.xib */,
-				2D7E4EA025F2716100773AC9 /* images.xcassets */,
 				2DEB1C6725F253CA007EB770 /* Info.plist */,
 			);
 			path = chat;
@@ -114,6 +125,9 @@
 			children = (
 				2D618D2E25F2772300972BCA /* Models */,
 				2DEB1C6F25F25443007EB770 /* ViewController */,
+				2DF0397525F513EF00EC0088 /* images.xcassets */,
+				2DEB1C5925F253CA007EB770 /* AppDelegate.swift */,
+				2DEB1C7025F25512007EB770 /* Launch Screen.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -188,11 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEB1C7125F25512007EB770 /* Launch Screen.xib in Resources */,
+				2DF0397625F513EF00EC0088 /* images.xcassets in Resources */,
 				2D58611025F3AFEC0071C20B /* ChatHomeViewController.xib in Resources */,
 				2D58611E25F3B1440071C20B /* ChatAddressViewController.xib in Resources */,
 				2D58611825F3B1320071C20B /* ChatRealViewController.xib in Resources */,
 				2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */,
-				2D7E4EA125F2716100773AC9 /* images.xcassets in Resources */,
+				2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +222,7 @@
 				2D58610F25F3AFEC0071C20B /* ChatHomeViewController.swift in Sources */,
 				2D58612225F3B1530071C20B /* ChatPersonalViewController.swift in Sources */,
 				2D58611725F3B1320071C20B /* ChatRealViewController.swift in Sources */,
+				2DC05B6D25F4AB7200C07125 /* ChatRealViewTableViewCell.swift in Sources */,
 				2D58611D25F3B1440071C20B /* ChatAddressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
