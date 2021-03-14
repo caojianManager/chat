@@ -17,6 +17,8 @@
 		2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */; };
 		2D61EC9D25FDEC6900F70545 /* ChatOldLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D61EC9B25FDEC6900F70545 /* ChatOldLoginViewController.swift */; };
 		2D61EC9E25FDEC6900F70545 /* ChatOldLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D61EC9C25FDEC6900F70545 /* ChatOldLoginViewController.xib */; };
+		2DB692E025FE41A900C44681 /* ChatRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB692DE25FE41A900C44681 /* ChatRegisterViewController.swift */; };
+		2DB692E125FE41A900C44681 /* ChatRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB692DF25FE41A900C44681 /* ChatRegisterViewController.xib */; };
 		2DC05B6D25F4AB7200C07125 /* ChatRealViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */; };
 		2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */; };
 		2DC5C5BC25FB8B8B00E45D95 /* ChatLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5C5BA25FB8B8B00E45D95 /* ChatLogInViewController.swift */; };
@@ -40,6 +42,8 @@
 		2D58612125F3B1530071C20B /* ChatPersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatPersonalViewController.xib; sourceTree = "<group>"; };
 		2D61EC9B25FDEC6900F70545 /* ChatOldLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOldLoginViewController.swift; sourceTree = "<group>"; };
 		2D61EC9C25FDEC6900F70545 /* ChatOldLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatOldLoginViewController.xib; sourceTree = "<group>"; };
+		2DB692DE25FE41A900C44681 /* ChatRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRegisterViewController.swift; sourceTree = "<group>"; };
+		2DB692DF25FE41A900C44681 /* ChatRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRegisterViewController.xib; sourceTree = "<group>"; };
 		2DC05B6B25F4AB7200C07125 /* ChatRealViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRealViewTableViewCell.swift; sourceTree = "<group>"; };
 		2DC05B6C25F4AB7200C07125 /* ChatRealViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRealViewTableViewCell.xib; sourceTree = "<group>"; };
 		2DC5C5BA25FB8B8B00E45D95 /* ChatLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogInViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 			path = oldLogIn;
 			sourceTree = "<group>";
 		};
+		2DB692DD25FE411E00C44681 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				2DB692DE25FE41A900C44681 /* ChatRegisterViewController.swift */,
+				2DB692DF25FE41A900C44681 /* ChatRegisterViewController.xib */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
 		2DC05B6A25F4A3C600C07125 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		2DC5C5B825FB8B4500E45D95 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				2DB692DD25FE411E00C44681 /* register */,
 				2D61EC9A25FDEC3E00F70545 /* oldLogIn */,
 				2DC5C5C625FC532000E45D95 /* stat */,
 				2DC5C5C425FB923D00E45D95 /* phoneLogIn */,
@@ -269,6 +283,7 @@
 				2D58611025F3AFEC0071C20B /* ChatHomeViewController.xib in Resources */,
 				2D58611E25F3B1440071C20B /* ChatAddressViewController.xib in Resources */,
 				2D58611825F3B1320071C20B /* ChatRealViewController.xib in Resources */,
+				2DB692E125FE41A900C44681 /* ChatRegisterViewController.xib in Resources */,
 				2D58612325F3B1530071C20B /* ChatPersonalViewController.xib in Resources */,
 				2DC7E1FE25FB4A3C004E33EA /* ChatAddressTableViewCell.xib in Resources */,
 				2DC05B6E25F4AB7200C07125 /* ChatRealViewTableViewCell.xib in Resources */,
@@ -290,6 +305,7 @@
 				2D58612225F3B1530071C20B /* ChatPersonalViewController.swift in Sources */,
 				2D58611725F3B1320071C20B /* ChatRealViewController.swift in Sources */,
 				2DC5C5C925FC537900E45D95 /* ChatLoginStatUtilViewController.swift in Sources */,
+				2DB692E025FE41A900C44681 /* ChatRegisterViewController.swift in Sources */,
 				2DC05B6D25F4AB7200C07125 /* ChatRealViewTableViewCell.swift in Sources */,
 				2D58611D25F3B1440071C20B /* ChatAddressViewController.swift in Sources */,
 			);
