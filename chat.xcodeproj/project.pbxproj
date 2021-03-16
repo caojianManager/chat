@@ -138,18 +138,10 @@
 				2DB692DD25FE411E00C44681 /* register */,
 				2D61EC9A25FDEC3E00F70545 /* oldLogIn */,
 				2DC5C5C625FC532000E45D95 /* stat */,
-				2DC5C5C425FB923D00E45D95 /* phoneLogIn */,
 				2DC5C5BA25FB8B8B00E45D95 /* ChatLogInViewController.swift */,
 				2DC5C5BB25FB8B8B00E45D95 /* ChatLogInViewController.xib */,
 			);
 			path = LogIn;
-			sourceTree = "<group>";
-		};
-		2DC5C5C425FB923D00E45D95 /* phoneLogIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = phoneLogIn;
 			sourceTree = "<group>";
 		};
 		2DC5C5C625FC532000E45D95 /* stat */ = {

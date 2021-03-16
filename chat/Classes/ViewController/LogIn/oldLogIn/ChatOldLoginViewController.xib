@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatOldLoginViewController" customModule="chat" customModuleProvider="target">
             <connections>
+                <outlet property="accountTextField" destination="AeH-UU-xst" id="IY1-5C-ClY"/>
+                <outlet property="forgetAccountOrPasswordButton" destination="qd8-2l-dWp" id="Ood-yX-gcN"/>
+                <outlet property="loginButton" destination="e9y-SJ-Xqj" id="Nr4-hh-BAp"/>
+                <outlet property="passwordTextField" destination="yP2-OO-nYS" id="31Q-NY-2o1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

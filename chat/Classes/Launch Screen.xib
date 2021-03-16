@@ -18,22 +18,21 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-Uc-GqQ" userLabel="logo">
-                    <rect key="frame" x="85.5" y="418" width="243" height="60"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="WnZ-Uc-GqQ" secondAttribute="height" multiplier="89:22" id="d9h-UI-uEo"/>
-                        <constraint firstAttribute="height" constant="60" id="wkl-u5-gSh"/>
-                    </constraints>
-                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒  讯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vo-1m-z49">
+                    <rect key="frame" x="100.5" y="395.5" width="213" height="105.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="88"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="LRH-NR-l9I" secondAttribute="bottom" id="CXv-nK-22x"/>
+                <constraint firstItem="4vo-1m-z49" firstAttribute="centerX" secondItem="LRH-NR-l9I" secondAttribute="centerX" id="F28-m8-1bD"/>
                 <constraint firstItem="LRH-NR-l9I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KYp-9u-1zI"/>
-                <constraint firstItem="WnZ-Uc-GqQ" firstAttribute="centerY" secondItem="LRH-NR-l9I" secondAttribute="centerY" id="fER-Sk-2uF"/>
+                <constraint firstItem="4vo-1m-z49" firstAttribute="centerY" secondItem="LRH-NR-l9I" secondAttribute="centerY" id="ZgA-QT-Qvw"/>
                 <constraint firstAttribute="trailing" secondItem="LRH-NR-l9I" secondAttribute="trailing" id="ixU-Hn-3Jr"/>
                 <constraint firstItem="LRH-NR-l9I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jps-zs-0tX"/>
-                <constraint firstItem="WnZ-Uc-GqQ" firstAttribute="centerX" secondItem="LRH-NR-l9I" secondAttribute="centerX" id="nv4-72-jpK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="95.652173913043484" y="83.705357142857139"/>
@@ -41,7 +40,6 @@
     </objects>
     <resources>
         <image name="launch_bg" width="414" height="736"/>
-        <image name="launch_logo" width="88.666664123535156" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
