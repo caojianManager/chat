@@ -21,6 +21,7 @@ class chatMessageViewController: UIViewController {
         super.viewDidLoad()
         configMqttClient()
         refreshContent()
+        refreshContent()
     }
 
     func refreshContent(){
