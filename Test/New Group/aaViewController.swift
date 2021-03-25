@@ -33,7 +33,7 @@ class aaViewController: UIViewController {
                 // Send it without waiting and check the reply on other socket
                 try requestor.send(string: textToBeSent, options: .dontWait)
                 let reply = try requestor.recv()
-                print(reply)
+      
 //                print("\(reply)")
 //                if reply == textToBeSent {
 //
