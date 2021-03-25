@@ -1,0 +1,36 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaMQTT (1.2.5):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - objc-zmq (0.1.2)
+  - SwiftyZeroMQ (1.0.25)
+
+DEPENDENCIES:
+  - CocoaMQTT
+  - objc-zmq (from `https://github.com/jeremy-w/objc-zmq.git`)
+  - SwiftyZeroMQ (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - CocoaMQTT
+    - SwiftyZeroMQ
+
+EXTERNAL SOURCES:
+  objc-zmq:
+    :git: https://github.com/jeremy-w/objc-zmq.git
+
+CHECKOUT OPTIONS:
+  objc-zmq:
+    :commit: fd47dee67ef6ccb63ec5dc6c63532b28171905e9
+    :git: https://github.com/jeremy-w/objc-zmq.git
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
+  objc-zmq: 942ab18aec50ebe04ec93cf01a9fa69d87e3eece
+  SwiftyZeroMQ: defa66cfbebad5835dd056b4114413670bb061f9
+
+PODFILE CHECKSUM: e19634b372331acc1d7d990cf05af7dcf1302584
+
+COCOAPODS: 1.10.1
