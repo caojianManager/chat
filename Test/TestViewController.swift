@@ -27,7 +27,7 @@ class TestViewController: UIViewController {
         mqtt.delegate = self
         print("咋就不习惯了")
        let right =  mqtt.connect()
-        print(right)
+     
        
    
         // Do any additional setup after loading the view.
