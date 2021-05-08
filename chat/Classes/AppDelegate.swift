@@ -15,16 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let chatOldLoginVC = ChatOldLoginViewController()
-        let chatHomeVC = ChatHomeViewController()
   
-        let test = ChatUserDefaultUtil()
-        test.saveUSerDefaultObject(object: false as AnyObject, key: autoLoginKey)
-        let isAutoLogin : Bool = ChatUserDefaultUtil.getUserDefaultObject(key: autoLoginKey).boolValue
-        if(isAutoLogin){
-            window?.rootViewController = chatHomeVC
-        }else{
+        
+        let isAutoLogin  = ChatUserDefaultUtil.getUserDefaultObject(key: autoLoginKey).boolValue
+        if isAutoLogin == nil || isAutoLogin  == false {
+            let chatOldLoginVC = ChatOldLoginViewController()
             window?.rootViewController = chatOldLoginVC
+        }else{
+            let chatHomeVC = ChatHomeViewController()
+            window?.rootViewController = chatHomeVC
         }
 
         window?.makeKeyAndVisible()

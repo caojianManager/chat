@@ -1,6 +1,0 @@
-framework module objc_zmq {
-  umbrella header "objc-zmq-umbrella.h"
-
-  export *
-  module * { export * }
-}

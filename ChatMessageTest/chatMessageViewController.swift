@@ -37,6 +37,7 @@ class chatMessageViewController: UIViewController {
             try requestor.connect(endpoint)
             //
             print("---向ZeroMQ服务器发送消息----")
+        
             try requestor.send(string: textFile.text!, options: .dontWait)
             refreshContent()
             print("---接收ZeroMQ服务器返回消息----")
@@ -54,8 +55,8 @@ class chatMessageViewController: UIViewController {
         mqtt.password = "public"
         mqtt.keepAlive = 60
         mqtt.delegate = self
-        let right =  mqtt.connect()
-         print("连接结果\(right)")
+        mqtt.connect()
+//         print("连接结果\(right)")
     }
   
 
@@ -70,19 +71,20 @@ extension chatMessageViewController : CocoaMQTTDelegate {
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: UInt16) {
-        
+        print("didPublishAck")
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16) {
+        print("didReceiveMessage")
         print("已经接受到的消息\(message.string)")
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topics: [String]) {
-        
+       
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didUnsubscribeTopic topic: String) {
-        
+        print("didUnsubscribeTopic")
     }
     
     func mqttDidPing(_ mqtt: CocoaMQTT) {
@@ -100,7 +102,7 @@ extension chatMessageViewController : CocoaMQTTDelegate {
 
     //正在建立连接
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
-        
+//
         print("正在建立连接")
         if ack.description == "accept" {
             mqtt.subscribe("/server")

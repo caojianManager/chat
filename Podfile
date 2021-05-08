@@ -4,9 +4,11 @@
 target 'chat' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'FMDB', '2.5'
   pod 'CocoaMQTT'
   pod 'SwiftyZeroMQ', '~> 1.0'
-  pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
+  pod 'Mantle', '~> 1.4'
+  #pod "objc-zmq", :git => 'https://github.com/jeremy-w/objc-zmq.git'
   # Pods for chat
 
 

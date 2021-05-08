@@ -2,35 +2,37 @@ PODS:
   - CocoaAsyncSocket (7.6.5)
   - CocoaMQTT (1.2.5):
     - CocoaAsyncSocket (~> 7.6.3)
-  - objc-zmq (0.1.2)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - Mantle (1.5.8):
+    - Mantle/extobjc (= 1.5.8)
+  - Mantle/extobjc (1.5.8)
   - SwiftyZeroMQ (1.0.25)
 
 DEPENDENCIES:
   - CocoaMQTT
-  - objc-zmq (from `https://github.com/jeremy-w/objc-zmq.git`)
+  - FMDB (= 2.5)
+  - Mantle (~> 1.4)
   - SwiftyZeroMQ (~> 1.0)
 
 SPEC REPOS:
   trunk:
     - CocoaAsyncSocket
     - CocoaMQTT
+    - FMDB
+    - Mantle
     - SwiftyZeroMQ
-
-EXTERNAL SOURCES:
-  objc-zmq:
-    :git: https://github.com/jeremy-w/objc-zmq.git
-
-CHECKOUT OPTIONS:
-  objc-zmq:
-    :commit: fd47dee67ef6ccb63ec5dc6c63532b28171905e9
-    :git: https://github.com/jeremy-w/objc-zmq.git
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
-  objc-zmq: 942ab18aec50ebe04ec93cf01a9fa69d87e3eece
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   SwiftyZeroMQ: defa66cfbebad5835dd056b4114413670bb061f9
 
-PODFILE CHECKSUM: e19634b372331acc1d7d990cf05af7dcf1302584
+PODFILE CHECKSUM: ddfc1eb599efe3765c3234a70e25e91f2e175a86
 
 COCOAPODS: 1.10.1
